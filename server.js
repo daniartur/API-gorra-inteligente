@@ -14,6 +14,9 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
   }));
+app.get('/', (req, res) => {
+    res.send('API funcionando');
+});
 app.use('/auth', authRoutes);
 app.use('/hats', hatRoutes); 
 
