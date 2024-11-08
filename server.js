@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
 });
 app.use('/auth', authRoutes);
 app.use('/hats', hatRoutes); 
+app.use('/api', ubicacionesRoutes);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
